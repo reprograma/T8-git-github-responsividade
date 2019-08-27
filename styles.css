@@ -5,7 +5,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-image: url("./assets/azul-bg.jpg");
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
 }
@@ -55,6 +55,15 @@ h1 {
 
 .header .logo {
   margin-top: 16px;
+  max-width: 200px;
+}
+
+.header .logo.logo--desktop {
+  display: block;
+}
+
+.header .logo.logo--mobile {
+  display: none;
 }
 
 .menu {
@@ -97,4 +106,93 @@ footer p {
   width: 100%;
   text-align: right;
   font-size: 8px;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    margin: 0 48px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .header {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    background-image: none;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .content {
+    background-size: auto 120px;
+    padding-top: 148px;
+  }
+
+  .header {
+    margin-top: 36px;
+  }
+
+  .header .logo.logo--desktop {
+    display: none;
+  }
+  
+  .header .logo.logo--mobile {
+    display: block;
+  }
+
+  .menu .menu__item .menu__link {
+    color: black;
+  }
+
+  .news {
+    margin-top: 48px;
+  }
+
+  h1 {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 690px) {
+  .content {
+    background-position: top right;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+    margin-top: 24px;
+  }
+
+  .header {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    margin: 0 36px;
+  }
+
+  .news {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 30px;
+  }
 }
