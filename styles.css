@@ -1,23 +1,100 @@
 * {
   font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-image: url("./assets/azul-bg.jpg");
-  background-repeat: no-repeat;
   background-size: 45% 100%;
-  width: 100vw;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .row {
-  display: flex;
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .column {
   width: 50%;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+.content {
+  background-image: url('./assets/linhas-bg.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto 160px;
+  padding-top: 200px;
+}
+
+.content .column {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header {
+  margin: 64px 0 0;
+}
+
+.header .logo {
+  margin-top: 16px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.menu .menu__item {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.menu .menu__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu .menu__item .menu__link {
+  color: white;
+}
+
+.news {
+  font-size: 20px;
+}
+
+.news .news__text,
+.news .news__link {
+  font-style: italic;
+}
+
+.news .news__text {
+  line-height: 1.8;
+}
+
+footer {
+  margin: 24px 0;
+}
+
+footer p {
+  width: 100%;
+  text-align: right;
+  font-size: 8px;
 }
