@@ -1,14 +1,5 @@
-* {
-  font-family: 'Rubik', sans-serif;
-  box-sizing: border-box;
-}
-
 body {
-  width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-image: url("./assets/azul-bg.jpg");
+  background-image: url("../assets/azul-bg.jpg");
   background-size: 45% 100%;
   background-repeat: no-repeat;
   background-position: top left;
@@ -17,27 +8,13 @@ body {
   justify-content: space-between;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.row {
-  width: 100%;
-}
-
-.column {
-  width: 50%;
-}
-
 h1 {
   font-size: 72px;
   margin: 0;
 }
 
 .content {
-  background-image: url('./assets/linhas-bg.png');
+  background-image: url('../assets/linhas-bg.png');
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto 160px;
@@ -98,21 +75,11 @@ h1 {
   line-height: 1.8;
 }
 
-footer {
-  margin: 24px 0;
-}
-
-footer p {
-  width: 100%;
-  text-align: right;
-  font-size: 8px;
-}
-
 @media (max-width: 1350px) {
   .container {
     margin: 0 48px;
   }
-
+  
   h1 {
     font-size: 48px;
   }
@@ -125,14 +92,6 @@ footer p {
 @media (max-width: 960px) {
   body {
     background-image: none;
-  }
-
-  .container {
-    display: block;
-  }
-
-  .column {
-    width: 100%;
   }
 
   .content {

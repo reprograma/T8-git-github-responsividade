@@ -1,0 +1,46 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.row {
+  width: 100%;
+}
+
+.column {
+  width: 50%;
+}
+
+footer {
+  margin: 24px 0;
+  padding: 0 48px;
+}
+
+footer p {
+  width: 100%;
+  text-align: right;
+  font-size: 8px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+  }
+}

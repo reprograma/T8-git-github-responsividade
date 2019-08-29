@@ -1,0 +1,148 @@
+.info {
+  padding: 36px;
+  background-color: #003c86;
+  color: white;
+}
+
+.info .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.info .header .logo {
+  max-width: 150px;
+}
+
+.info .header .go-back {
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.info p {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+hr {
+  width: 100%;
+  border-color: #003c86;
+  border-style: solid;
+}
+
+.stations {
+  font-style: italic;
+  font-weight: 300;
+  position: relative;
+  padding: 56px 36px;
+  margin-top: -48px;
+}
+
+.stations .stations__track {
+  background-color: #003c86;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  width: 24px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 32px;
+}
+
+.stations .stations__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.stations .station {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.stations .station .station__marker {
+  display: inline-block;
+  margin-right: 24px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 999;
+}
+
+@media (min-width: 961px) {
+  body {
+    height: 100vh;
+    background: linear-gradient(
+      to right, 
+      #003c86 0%,
+      #003c86 50%,
+      #ffffff 50%,
+      #ffffff 100%
+    );
+  }
+
+  .row,
+  .container {
+    height: 100%;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .info {
+    height: 100%;
+    padding: 48px;
+  }
+
+  .info .header {
+    margin-bottom: 64px;
+  }
+
+  .info h1 {
+    font-size: 48px;
+  }
+
+  .info p {
+    font-size: 20px;
+    line-height: 2.2;
+  }
+
+  .stations {
+    margin-top: 0;
+    padding-left: 96px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .stations__container {
+    position: relative;
+  }
+
+  .stations .stations__track {
+    width: 32px;
+    border-radius: 16px;
+    height: calc(100% + 48px);
+    top: -48px;
+    left: -8px;
+  }
+
+  .stations .stations__list {
+    font-size: 18px;
+    margin: 64px 0;
+  }
+
+  .stations .station .station__marker {
+    margin-right: 40px;
+  }
+
+  .stations .station {
+    margin-bottom: 56px;
+  }
+}
